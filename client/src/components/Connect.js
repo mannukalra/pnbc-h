@@ -17,7 +17,7 @@ class Connect extends Component{
     triggerMail = (subject, body) =>{
         console.log("trigger mail called!")
         let _data = { subject, body }
-        const url = '/sendmail'; // `${window.location.href}sendmail`;
+        const url = `${window.location.href}sendmail`;
         console.log(url)
         fetch(url, {
             method: "POST",
