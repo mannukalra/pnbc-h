@@ -26,7 +26,7 @@ app.post('/sendmail', jsonParser, (req, res) => {
   console.log(JSON.stringify(req.body))
   var mailOptions = {
       from: 'pestbugcontrol@gmail.com',
-      to: 'mannu.kalra29@gmail.com',
+      to: 'tarsem.tps@gmail.com',
       subject: req.body.subject,
       text: req.body.body};
 

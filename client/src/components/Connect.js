@@ -19,7 +19,7 @@ class Connect extends Component{
         let _data = { subject, body }
         let url = `${window.location.href}sendmail`;
         url = url.replace('http:', 'https:')
-        console.log(url)
+        console.log("Email endpoint "+url+" if fails try accessing http://www.google.com/accounts/DisplayUnlockCaptcha")
         fetch(url, {
             method: "POST",
             body: JSON.stringify(_data),
