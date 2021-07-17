@@ -25,16 +25,17 @@ app.get('/test', (req, res) => {
 app.post('/sendmail', jsonParser, (req, res) => {
   console.log(JSON.stringify(req.body))
   var mailOptions = {
-      from: 'pestbugcontrol@gmail.com',
-      to: 'tarsem.tps@gmail.com',
+      from: 'araidarome@gmail.com',
+      to: 'pestbugcontrol@gmail.com',
       subject: req.body.subject,
-      text: req.body.body};
+      text: req.body.body,
+      cc: 'mkmandeepkalra@gmail.com'};//tarsem.tps
 
   var transporter = nodemailer.createTransport({
       service: 'gmail',
       auth: {
-          user: 'pestbugcontrol@gmail.com',
-          pass: Buffer.from("cmFtcmFtQHRhcnNlbTE=", 'base64').toString('ascii')
+          user: 'araidarome@gmail.com',
+          pass: Buffer.from("YWFBQTExISE=", 'base64').toString('ascii')
       }
   });
   transporter.sendMail(mailOptions, (error, info) => {
