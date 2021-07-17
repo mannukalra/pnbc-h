@@ -29,7 +29,7 @@ app.post('/sendmail', jsonParser, (req, res) => {
       to: 'pestbugcontrol@gmail.com',
       subject: req.body.subject,
       text: req.body.body,
-      cc: 'mkmandeepkalra@gmail.com'};//tarsem.tps
+      cc: 'tarsem.tps@gmail.com'};
 
   var transporter = nodemailer.createTransport({
       service: 'gmail',
