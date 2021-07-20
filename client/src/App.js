@@ -8,7 +8,8 @@ import LogoAct from './logo-actual.svg';
 import Bottom from './components/Bottom.js'
 import Connect from './components/Connect.js'
 
-
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import 'react-tabs/style/react-tabs.css';
 
 class App extends Component{
 
@@ -45,9 +46,30 @@ class App extends Component{
         <div style={{ display: "flex", justifyContent: "center" }}>
           <div style={{ width: "82%", minWidth: "380px", height: "112%" }}>
             <div style={{ backgroundImage: `url(${bg2})`, boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5)"}}>
-              <div className="button-grid">
+              <div className="tab-grid">
                 <img src={LogoAct} alt="logo" style={{ marginLeft:"12%", maxHeight: "42px", maxWidth: "72px" }} />
-                <button className="button-color">
+                <Tabs>
+                  <TabList>
+                    <Tab style={{ width: "22%"}}>HOME</Tab>
+                    <Tab style={{ width: "23%"}}>ABOUT US</Tab>
+                    <Tab style={{ width: "23%"}}>SERVICES</Tab>
+                    <Tab style={{ width: "23%"}}>Locations</Tab>
+                  </TabList>
+
+                  <TabPanel>
+                    <h2>test content 1</h2>
+                  </TabPanel>
+                  <TabPanel>
+                    <h2>test content 2</h2>
+                  </TabPanel>
+                  <TabPanel>
+                    <h2>test content 3</h2>
+                  </TabPanel>
+                  <TabPanel>
+                    <h2>test content 4</h2>
+                  </TabPanel>
+                </Tabs>
+                {/* <button className="button-color">
                   HOME
                 </button>
                 <button className="button-color">
@@ -58,7 +80,7 @@ class App extends Component{
                 </button>
                 <button className="button-color">
                   Locations
-                </button>
+                </button> */}
               </div>
               <img src={logo} className="App-logo" alt="logo" />
               <p className="font-large">

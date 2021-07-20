@@ -40,13 +40,28 @@
   }
 }
 
-.button-grid {
+.tab-grid {
   display: grid;
-  grid-template-columns: 3.5fr 6fr 6fr 6fr 6fr;
+  grid-template-columns: 3.5fr 24fr;
   grid-gap: 0 0.1rem;
   border-bottom: 0.2rem solid #074193;
 }
 
+.react-tabs__tab {
+  background: #e5f8fd !important;
+}
+
+.react-tabs__tab--selected {
+  background: #61DAFB !important;
+  border-color: #aaa;
+  color: black;
+  border-radius: 5px 5px 0 0 !important;
+}
+
+.react-tabs__tab {
+  display: inline-block;
+  border: 1px solid transparent !important;
+}
 .button-color{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: .84rem;
