@@ -13,6 +13,15 @@
   }
 }
 
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .App-header {
   min-height: 7vh;
   display: flex;
@@ -23,28 +32,12 @@
   color: white;
 }
 
-.mail-link {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: x-large;
-  color: #074193;
-  height: 4rem;
-  width: 12rem;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 .tab-grid {
   display: grid;
-  grid-template-columns: 3.5fr 24fr;
+  grid-template-columns: 7fr 9fr 9fr 9fr;
   grid-gap: 0 0.1rem;
   border-bottom: 0.2rem solid #074193;
+  width: -moz-available
 }
 
 .react-tabs__tab {
@@ -69,7 +62,6 @@
   word-wrap: break-word;
 }
 
-
 .font-large{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 4.8rem;
@@ -78,4 +70,20 @@
   margin-left: 40%;
   text-align: left;
   word-wrap: break-word;
+}
+
+.font-medium{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 2.4rem;
+  color: #074193;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+.mail-link {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: x-large;
+  color: #074193;
+  height: 4rem;
+  width: 12rem;
 }

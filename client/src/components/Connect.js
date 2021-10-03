@@ -17,8 +17,9 @@ class Connect extends Component{
     triggerMail = (subject, body) =>{
         console.log("trigger mail called!")
         let _data = { subject, body }
-        let url = `${window.location.href}sendmail`;
-        url = url.replace('http:', 'https:')
+        // let url = `${window.location.href}sendmail`;
+        let url = "http://localhost:5000/sendmail";
+        // url = url.replace('http:', 'https:')
         console.log("Email endpoint "+url+" if fails try accessing http://www.google.com/accounts/DisplayUnlockCaptcha")
         fetch(url, {
             method: "POST",
