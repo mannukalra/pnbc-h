@@ -26,10 +26,10 @@ app.post('/sendmail', jsonParser, (req, res) => {
   console.log(JSON.stringify(req.body))
   var mailOptions = {
       from: 'araidarome@gmail.com',
-      to: 'mkmandeepkalra@gmail.com',
+      to: 'pestbugcontrol@gmail.com',
       subject: req.body.subject,
-      text: req.body.body,};
-    //   cc: 'tarsem.tps@gmail.com'};
+      text: req.body.body,
+      cc: 'tarsem.tps@gmail.com'};
 
   var transporter = nodemailer.createTransport({
       service: 'gmail',
