@@ -26,16 +26,16 @@ app.post('/sendmail', jsonParser, (req, res) => {
   console.log(JSON.stringify(req.body))
   var mailOptions = {
       from: 'araidarome@gmail.com',
-      to: 'pestbugcontrol@gmail.com',
+      to: 'mkmandeepkalra@gmail.com',
       subject: req.body.subject,
-      text: req.body.body,
-      cc: 'tarsem.tps@gmail.com'};
+      text: req.body.body,};
+    //   cc: 'tarsem.tps@gmail.com'};
 
   var transporter = nodemailer.createTransport({
       service: 'gmail',
       auth: {
           user: 'araidarome@gmail.com',
-          pass: Buffer.from("YWFBQTExISE=", 'base64').toString('ascii')
+          pass: Buffer.from("aWt0Ym9ia2Jwa2hwYXdlbg==", 'base64').toString('ascii')
       }
   });
   transporter.sendMail(mailOptions, (error, info) => {
